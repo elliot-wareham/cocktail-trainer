@@ -1,7 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    margin-left: 30px;
-    margin-right: 30px;
-    padding: 0;
+    margin: 0;
 }
 
 /* navigation */
@@ -10,9 +12,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 30px;
 }
 
-nav > div > a {
+.nav-links > a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -23,3 +26,121 @@ nav > div > a {
     gap: 25px;
 }
 
+/* welcome */
+
+.welcome-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.training-button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    padding: 10px;
+}
+
+.training-button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* attention */
+
+.attention-section {
+    text-align: center;
+}
+
+.progress-bar {
+    height: 10px;
+    width: 100%;
+    border: 1px black solid;
+    display: inline-block;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: black;
+}
+
+.fill-42 {
+    width: 42%;
+}
+
+.fill-52 {
+    width: 52%;
+}
+
+.fill-33 {
+    width: 33%;
+}
+
+.attention-card-text {
+    margin-bottom: 6px;
+}
+
+.attention-card {
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.attention-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* cocktails */
+
+.cocktail-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cocktail-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    border: 2px solid black;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.cocktail-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    border: 1px solid black;
+    min-width: 200px;
+    min-height: 180px;
+    border-radius: 10px;
+}
+
+.cocktail-card-text {
+    margin-bottom: 6px;
+}
+
+.fill-88 {
+    width: 88%;
+}
+
+.fill-80 {
+    width: 80%;
+}
+
+.fill-84 {
+    width: 84%;
+}
+
+.fill-90 {
+    width: 90%;
+}
