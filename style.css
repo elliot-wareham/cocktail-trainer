@@ -4,6 +4,9 @@
 
 body {
     margin: 0;
+    background-color: #111311;
+    color: #F2F0E9;
+    font-family: "Inter", Arial, sans-serif;
 }
 
 /* navigation */
@@ -12,39 +15,63 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 2rem;
+    background-color: #191C19;
+    border-bottom: 2px solid #343A35;
+}
+
+nav > h1 {
+    color: #F2F0E9;
+    font-family: "Barlow Condensed", Arial, sans-serif;
+    font-weight: 700;
 }
 
 .nav-links > a {
     text-decoration: none;
-    color: black;
+    color: #A6AAA3;
     text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.nav-links > a:hover {
+    color: #7FA66A;
 }
 
 .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 1.5rem;
 }
 
 /* welcome */
 
 .welcome-section {
     text-align: center;
-    padding: 40px 20px;
+    padding: 2.5rem 1.5px;
+}
+
+.welcome-section > h2 {
+    font-family: "Barlow Condensed", Arial, sans-serif;
+    font-weight: 600;
 }
 
 .training-button {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
-    color: black;
-    padding: 10px;
+    color: #111311;
+    padding: 0.75rem 1rem;
+    background-color: #7FA66A;
+    border: 1px solid #5F7F50;
+    box-shadow: -1px 3px 0 #4E6843;
+    border-radius: 10px;
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 600;
+    margin-top: 2rem;
 }
 
 .training-button:hover {
-    background-color: black;
-    color: white;
+    color: #F2F0E9;
+    box-shadow: 0 1px 0 #4E6843;
 }
 
 /* attention */
@@ -53,10 +80,15 @@ nav {
     text-align: center;
 }
 
+.attention-section > h2 {
+    font-family: "Barlow Condensed", Arial, sans-serif;
+    font-weight: 600;
+}
+
 .progress-bar {
-    height: 10px;
+    height: 8px;
     width: 100%;
-    border: 1px black solid;
+    border: 1px solid #111311;
     display: inline-block;
 }
 
@@ -78,21 +110,26 @@ nav {
 }
 
 .attention-card-text {
-    margin-bottom: 6px;
+    margin-bottom: 0.5rem;
 }
 
 .attention-card {
-    padding: 10px;
-    border: 1px black solid;
+    padding: 0.75px;
+    border: 1px solid black;
     border-radius: 10px;
     width: 100%;
     max-width: 300px;
 }
 
+.attention-card > h3 {
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 600;
+}
+
 .attention-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.5rem;
     align-items: center;
 }
 
@@ -100,25 +137,30 @@ nav {
 
 .cocktail-section {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 2.5rem;
+}
+
+.cocktail-section > h2 {
+    font-family: "Barlow Condensed", Arial, sans-serif;
+    font-weight: 600;
 }
 
 .cocktail-carousel {
     display: flex;
-    gap: 20px;
+    gap: 1.5rem;
     overflow-x: auto;
     padding: 20px;
     border: 2px solid black;
     width: 90%;
-    margin: 20px auto;
-    border-radius: 5px;
+    margin: 1.5rem auto;
+    border-radius: 10px;
 }
 
 .cocktail-card {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 0.75rem;
     border: 1px solid black;
     min-width: 200px;
     min-height: 180px;
@@ -126,7 +168,7 @@ nav {
 }
 
 .cocktail-card-text {
-    margin-bottom: 6px;
+    margin-bottom: 0.5rem;
 }
 
 .fill-88 {
