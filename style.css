@@ -52,6 +52,7 @@ nav > h1 {
 .welcome-section > h2 {
     font-family: "Barlow Condensed", Arial, sans-serif;
     font-weight: 600;
+    font-size: 2rem;
 }
 
 .training-button {
@@ -78,23 +79,68 @@ nav > h1 {
 
 .attention-section {
     text-align: center;
+    padding: 0 1rem;
 }
 
 .attention-section > h2 {
     font-family: "Barlow Condensed", Arial, sans-serif;
     font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.attention-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.attention-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: left;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #191C19;
+    border: 1px solid #343A35;
+    color: #A6AAA3;
+    padding: 0.5rem 1.5rem;
+}
+
+.attention-card > h3 {
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 600;
+    color: #F2F0E9;
+}
+
+.mastery-section {
+    margin: 0 0 0.75rem;
+}
+
+.mastery-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.attention-card > p {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #A6AAA3;
 }
 
 .progress-bar {
-    height: 8px;
+    height: 6px;
     width: 100%;
-    border: 1px solid #111311;
+    border: none;
+    background-color: #343A35;
     display: inline-block;
 }
 
 .progress-fill {
     height: 100%;
-    background-color: black;
+    background-color: #7FA66A;
 }
 
 .fill-42 {
@@ -107,30 +153,6 @@ nav > h1 {
 
 .fill-33 {
     width: 33%;
-}
-
-.attention-card-text {
-    margin-bottom: 0.5rem;
-}
-
-.attention-card {
-    padding: 0.75px;
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 300px;
-}
-
-.attention-card > h3 {
-    font-family: "Inter", Arial, sans-serif;
-    font-weight: 600;
-}
-
-.attention-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
 }
 
 /* cocktails */
