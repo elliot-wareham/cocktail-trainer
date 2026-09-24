@@ -76,7 +76,7 @@ const cocktails = [
     }
 ];
 
-// Cocktail carousel section on dashboard
+// Cocktail carousel section
 
 const carousel = document.querySelector(".cocktail-carousel");
 
@@ -147,3 +147,13 @@ for (const cocktail of cocktails) {
         lastTimePractised.textContent = `Last practised: ${cocktail.lastPractised}`;
     }
 };
+
+const leftArrow = document.querySelector(".carousel-arrow-left");
+const rightArrow = document.querySelector(".carousel-arrow-right");
+
+function scrollLeft () {
+    console.log("left arrow clicked");
+}
+
+leftArrow.addEventListener("click", scrollLeft);
+rightArrow.addEventListener("click", ???);
