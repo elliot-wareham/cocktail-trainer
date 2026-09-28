@@ -152,8 +152,35 @@ const leftArrow = document.querySelector(".carousel-arrow-left");
 const rightArrow = document.querySelector(".carousel-arrow-right");
 
 function scrollLeft () {
-    console.log("left arrow clicked");
+    carousel.scrollBy ({
+        left: -300,
+        behavior: "smooth"
+    });
+}
+
+function scrollRight () {
+    carousel.scrollBy ({
+        left: 300,
+        behavior: "smooth"
+    });
 }
 
 leftArrow.addEventListener("click", scrollLeft);
-rightArrow.addEventListener("click", ???);
+rightArrow.addEventListener("click", scrollRight);
+
+function updateArrows () {
+    if (carousel.scrollLeft === 0) {
+        leftArrow.style.display = "none";
+    } else {
+        leftArrow.style.display = "block";
+    };
+    if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) {
+        rightArrow.style.display = "none";
+    } else {
+        rightArrow.style.display = "block";
+    }
+}
+
+updateArrows();
+
+carousel.addEventListener("scroll", updateArrows);
