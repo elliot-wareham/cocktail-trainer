@@ -2,7 +2,32 @@ const cocktails = [
     {
         name: "Mai Tai",
         mastery: 65,
-        lastPractised: "5 days ago"
+        lastPractised: "5 days ago",
+        glass: "Short Crystal",
+        ice: "Regular Ice",
+        ingredients:[
+            {
+                ingredientName: "Cherry Brandy",
+                measurement: 25
+            },
+            {
+                ingredientName: "Captain Morgans Spiced Rum",
+                measurement: 12.5
+            },
+            {
+                ingredientName: "Kraken Spiced Rum",
+                measurement: 12.5
+            },
+            {
+                ingredientName: "Lime Juice",
+                measurement: 25
+            },
+            {
+                ingredientName: "Orgeat",
+                measurement: 25
+            }
+        ],
+        garnish:["Lime Wedge", "Cherry", "Mint Sprig"]
     },
     {
         name: "Bramble",
