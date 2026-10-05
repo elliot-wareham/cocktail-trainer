@@ -100,3 +100,7 @@ const cocktails = [
         lastPractised: "2 days ago"
     }
 ];
+
+const glasses = [
+    "Short Crystal", "Tall Crystal", "Wine Glass", "Coupe Glass", "Sling Glass", "Mason Jar"
+];
